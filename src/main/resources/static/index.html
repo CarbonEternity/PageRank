@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BigDataLab4</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+<div class="row">
+
+    <div class="column30">
+        <h2>Page rank</h2>
+
+        <label for="url">URL:</label>
+        <input type="url" id="url" name="url" style="width: 50%">
+        <br/>
+
+        <label for="max_requests">Max request count:</label>
+        <input type="number" value="0" min="0" id="max_requests" name="max_requests" style="width: 50%">
+        <br/><br/>
+
+        <button type="button" id="process" name="process">Process</button>
+        <br/><br/>
+
+        <label id="pageRanks"></label>
+    </div>
+
+    <div class="column70">
+        <div id="mynetwork" style="width: 100%; height: 99%"></div>
+    </div>
+</div>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/vis-network.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</html>

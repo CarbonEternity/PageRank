@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column30 {
+    float: left;
+    width: 30%;
+    height: 100vh;
+    padding: 10px;
+}
+
+
+.column70 {
+    float: left;
+    width: 70%;
+    height: 100vh;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
